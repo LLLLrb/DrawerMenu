@@ -1,0 +1,205 @@
+body {
+	height: 1024px;
+	background-image: url(../img/qrcode.png);
+	background-color: grey;
+	overflow-x: hidden;
+}
+
+/* ***************
+DrawerMenu1
+*************** */
+.drawerMenu1 {
+	width: 168px;
+	right: -108px;
+	/* -108 */
+	top: 58px;
+	position: fixed;	/* fixed */
+	list-style: none;
+	transition: right .5s;
+	-moz-transition: right .5s; 	/* Firefox 4 */
+	-webkit-transition: right .5s;	 /* Safari and Chrome */
+	-o-transition: right .5s;	 /* Opera */
+}
+
+.drawerMenu1:hover {
+	right: 5px;
+}
+
+.drawerMenu1 span {
+	color: white;
+	font-family: "Microsoft YaHei";
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.drawerMenu1 img {
+	width: 33px;
+	height: 33px;
+	vertical-align: middle;
+	margin-left: 15px;
+	margin-top: -5px;
+	border-radius: 5px;
+}
+
+.drawerMenu1 .topLine {
+	height: 58px;
+	line-height: 58px;
+	background-color: aqua;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.drawerMenu1 .bottomLine {
+	height: 58px;
+	line-height: 58px;
+	background-color: chocolate;
+	border-radius: 5px;
+	overflow: hidden;	/* 溢出不产生滚动条 */
+	transition: height .4s;
+	-moz-transition: height .4s; 	/* Firefox 4 */
+	-webkit-transition: height .4s;	 /* Safari and Chrome */
+	-o-transition: height .4s;	 /* Opera */
+}
+
+.drawerMenu1:hover .bottomLine {
+	height: 200px;
+}
+
+.drawerMenu1 .bottomLine div {
+	height: 150px;
+	background-image: url(../img/qr_code.png);
+	background-repeat: no-repeat;
+	background-size: 118px;
+	background-position-x: center;
+}
+
+/* ***************
+DrawerMenu1
+*************** */
+
+/* ***************
+DrawerMenu2
+*************** */
+.drawerMenu2 {
+	right: 0px;
+	top: 388px;
+	position: fixed;	/* fixed */
+	list-style: none;
+}
+
+.drawerMenu2 .topLine, .drawerMenu2 .bottomLine {
+	height: 58px;
+	width: 58px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 33px;
+	background-color: aqua;
+	position: relative;
+	border-radius: 5px 0 0 5px;
+	display: block;
+	margin-bottom: 5px;
+	cursor: pointer;
+	transition: all .1s ease;
+	-moz-transition: all .1s ease; 	/* Firefox 4 */
+	-webkit-transition: all .1s ease;	 /* Safari and Chrome */
+	-o-transition: all .1s ease;	 /* Opera */
+}
+
+.drawerMenu2 .bottomLine:hover {
+	background-color: coral;
+}
+
+.topLogo {
+	background-image: url(../img/gotop.png);
+}
+
+.bottomLogo {
+	background-image: url(../img/qq.png);
+}
+
+.drawerMenu2 span {
+	color: white;
+	font-family: "Microsoft YaHei";
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.drawerMenu2 .topLine div {
+	height: 58px;
+	width: 148px;
+	right: -148px;
+	position: absolute;
+	line-height: 58px;
+	background-color: aqua;
+	border-radius: 5px;
+	opacity: 0;
+	transition: right, opacity .4s ease;
+	-moz-transition: right, opacity .4s ease; 	/* Firefox 4 */
+	-webkit-transition: right, opacity .4s ease;	 /* Safari and Chrome */
+	-o-transition: right, opacity .4s ease;	 /* Opera */
+}
+
+.drawerMenu2 .topLine:hover div {
+	opacity: 1;
+	right: 0;
+}
+
+.drawerMenu2 .bottomLine div {
+	height: 58px;
+	width: 98px;
+	right: -98px;
+	position: absolute;
+	line-height: 58px;
+	background-color: coral;
+	border-radius: 5px;
+	opacity: 0;
+	transition: right, opacity .4s;
+	-moz-transition: right, opacity .4s; 	/* Firefox 4 */
+	-webkit-transition: right, opacity .4s;	 /* Safari and Chrome */
+	-o-transition: right, opacity .4s;	 /* Opera */
+}
+
+.drawerMenu2 .bottomLine:hover div {
+	opacity: 1;
+	right: 50px;
+}
+
+/* ***************
+DrawerMenu2
+*************** */
+
+
+
+
+
+
+
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* 未访问的链接 */
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* 已访问的链接 */
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* 鼠标移动到链接上 */
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* 选定的链接 */
+/* a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+   a:active 必须被置于 a:hover 之后，才是有效的。 */
+
